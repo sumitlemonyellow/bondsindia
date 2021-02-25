@@ -1,0 +1,153 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 200px;
+  padding: 20px;
+  color: white;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+a {cursor: pointer;}
+
+.link {border-bottom:1px solid;text-decoration: none;}
+.link:hover {
+  text-decoration: none;
+  border-bottom-color: transparent;
+}
+
+.d-flex {display:flex;}
+
+.justify-content-between {justify-content: space-between;}
+.justify-content-start {justify-content: flex-start;}
+.justify-content-end {justify-content: flex-end;}
+
+.align-items-center {align-items: center;}
+
+.App-intro {
+  font-size: large;
+}
+
+body {
+  font-family: 'aventaregular';
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+@font-face {
+  font-family: 'aventaregular';
+  src: url('./fonts/aventa-regular-webfont.woff2') format('woff2'),
+       url('./fonts/aventa-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'aventabold';
+  src: url('./fonts/aventa-bold-webfont.woff2') format('woff2'),
+       url('./fonts/aventa-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+
+@media(min-width: 1028px) {
+  .wrapper-wrap .wrapper-sign {
+    height: 100vh;
+    background: url('./images/Background_sign.svg') no-repeat 0 0;
+    background-size: cover;
+  }
+  .logo_div {
+    right: 60px;
+    top: 48px;
+  }
+}
+@media(max-width: 1028px) {
+  .wrapper-wrap {
+    padding-top: 84px;
+  }
+  .logo_div {
+    right: 0 ;
+    left: 0;
+    top: 30px;
+  }
+}
+.wrapper-wrap .wrapper-screens {
+  position: absolute;
+  transition: right 0.6s;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: #fff url('./images/bondsBg.svg') no-repeat 0 0;
+  z-index: 8877;
+}
+
+.wrapper-wrap.bondsShown .wrapper-screens {
+  transition: right 0.6s;
+  right: 0;
+}
+
+.slick-prev, .slick-next {
+  height: 67px;
+  color: white !important;
+}
+
+.btn-first, .slick-next, .btn-first-outline, .slick-prev {
+	transition: background 0.5s;
+  border-radius: 4px !important;
+}
+
+.btn-first, .slick-next {
+	color: white !important;
+	transition: background 0.5s;
+	background: #5383fe !important;
+  border-radius: 4px !important;
+}
+
+.btn-first-outline, .slick-prev {
+	color: #5383fe !important;
+	transition: background 0.5s;
+	background: #FFFFFF !important;
+  border-radius: 4px !important;
+  border: 2px solid #5383fe !important;
+}
+
+.btn-first-outline:hover , .slick-prev:hover {
+	transition: background 0.5s; color: white !important;
+  /* color: #3261d8 !important;
+	border: 2px solid #3261d8 !important;
+  background: white !important; */
+}
+
+
+.btn-first:hover, .slick-prev:hover, .slick-next:hover {
+	transition: background 0.5s;
+	background: #3261d8 !important;
+}
+
+
+.slick-prev:before, .slick-next:before {
+  content: none !important;
+}
+
+.logo_div {position: absolute;  z-index: 77776;}
